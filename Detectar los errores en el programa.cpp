@@ -11,12 +11,12 @@ printf("Cuanto suman?:\n");
 scanf("%d", &suma);
 resultado = n1 + n2;
 if (suma == resultado)
-{
-printf("Correcto\n");
-}
+  {
+  printf("Correcto\n");
+  }
 else
-{
-printf("INCORRECTO: La suma es %d\n",resultado);
-}
+  {
+  printf("INCORRECTO: La suma es %d\n",resultado);
+  }
 return 0;
 }
