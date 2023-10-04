@@ -1,18 +1,22 @@
 #include <stdio.h>
 
-int main ()
+int main() 
 {
-int a=0;
-printf("Intruduzca un ano: \n");
+int a = 0;
+while (1) 
+{
+printf("Introduzca un ano: \n");
 scanf("%d", &a);
-if ( (a % 4 == 0) && (a % 100 != 0) || (a % 400 == 0 ))
+if ((a % 4 == 0 && a % 100 != 0) || (a % 400 == 0)) 
 	{
-	printf("es bisiesto");
-	}
-else 
+        printf("Es bisiesto\n");
+        break; 
+    	} 
+	else 
 	{
-	printf("No es bisiesto");
-	}
-return 0 ;
+        printf("No es bisiesto\n");
+    	}
+}
 
+    return 0;
 }
